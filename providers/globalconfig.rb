@@ -28,7 +28,7 @@ use_inline_resources if defined?(use_inline_resources)
 action :create  do
   template new_resource.path do
     source 'main.erb'
-    cookbook node[:rackspace_yum][:main][:cookbook_template_globalconfig]
+    cookbook node['rackspace_yum']['main']['cookbook_template_globalconfig']
     mode '0644'
     variables(:config => new_resource)
   end

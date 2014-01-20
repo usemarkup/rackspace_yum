@@ -41,7 +41,7 @@ action :create  do
 
   template "/etc/yum.repos.d/#{new_resource.repositoryid}.repo" do
     source 'repo.erb'
-    cookbook node[:rackspace_yum][:main][:cookbook_template_repository]
+    cookbook node['rackspace_yum']['main']['cookbook_template_repository']
     mode '0644'
     variables(:config => new_resource)
     notifies :run, "execute[yum-makecache-#{new_resource.repositoryid}]", :immediately

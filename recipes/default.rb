@@ -18,16 +18,16 @@
 # limitations under the License.
 
 rackspace_yum_globalconfig '/etc/yum.conf' do
-  cachedir node[:rackspace_yum][:main][:cachedir]
-  keepcache node[:rackspace_yum][:main][:keepcache]
-  debuglevel node[:rackspace_yum][:main][:debuglevel]
-  exclude node[:rackspace_yum][:main][:exclude]
-  logfile node[:rackspace_yum][:main][:logfile]
-  exactarch node[:rackspace_yum][:main][:exactarch]
-  obsoletes node[:rackspace_yum][:main][:obsoletes]
-  installonly_limit node[:rackspace_yum][:main][:installonly_limit]
-  installonlypkgs node[:rackspace_yum][:main][:installonlypkgs]
-  installroot node[:rackspace_yum][:main][:installroot]
-  distroverpkg node[:rackspace_yum][:main][:distroverpkg]
+  cachedir node['rackspace_yum']['main']['cachedir']
+  keepcache node['rackspace_yum']['main']['keepcache']
+  debuglevel node['rackspace_yum']['main']['debuglevel']
+  exclude node['rackspace_yum']['main']['exclude']
+  logfile node['rackspace_yum']['main']['logfile']
+  exactarch node['rackspace_yum']['main']['exactarch']
+  obsoletes node['rackspace_yum']['main']['obsoletes']
+  installonly_limit node['rackspace_yum']['main']['installonly_limit']
+  installonlypkgs node['rackspace_yum']['main']['installonlypkgs']
+  installroot node['rackspace_yum']['main']['installroot']
+  distroverpkg node['rackspace_yum']['main']['distroverpkg']
   action :create
 end
