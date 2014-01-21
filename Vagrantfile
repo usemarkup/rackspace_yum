@@ -1,6 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-#require 'berkshelf/vagrant'
+require 'berkshelf/vagrant'
 
 Vagrant.configure("2") do |config|
   config.vm.box_url = "https://github.com/mitchellh/vagrant-rackspace/raw/master/dummy.box"
