@@ -13,3 +13,5 @@ suites:
 - name: default
   run_list: ["recipe[rackspace_yum::default]"]
   attributes: {}
+  includes:
+    - centos-6.4
