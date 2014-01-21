@@ -43,7 +43,7 @@ action :create  do
     source 'repo.erb'
     cookbook node['rackspace_yum']['main']['cookbook_template_repository']
     mode '0644'
-    variables(:config => new_resource)
+    variables(config: new_resource)
     notifies :run, "execute[yum-makecache-#{new_resource.repositoryid}]", :immediately
     notifies :create, "ruby_block[yum-cache-reload-#{new_resource.repositoryid}]", :immediately
   end

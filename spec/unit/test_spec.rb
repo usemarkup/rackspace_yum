@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'rackspace_yum_test::test' do
   let(:chef_run) do
     ChefSpec::Runner.new(
-      :step_into => %w{ rackspace_yum_repository rackspace_yum_globalconfig }
+      step_into: %w{ rackspace_yum_repository rackspace_yum_globalconfig }
     ) do |node|
       node.set['rackspace_yum']['main']['cookbook_template_globalconfig'] = 'rackspace_yum'
       node.set['rackspace_yum']['main']['cookbook_template_repository'] = 'rackspace_yum'

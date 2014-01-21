@@ -30,7 +30,7 @@ action :create  do
     source 'main.erb'
     cookbook node['rackspace_yum']['main']['cookbook_template_globalconfig']
     mode '0644'
-    variables(:config => new_resource)
+    variables(config: new_resource)
   end
 end
 
