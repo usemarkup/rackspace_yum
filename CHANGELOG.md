@@ -2,6 +2,10 @@ yum Cookbook CHANGELOG
 ======================
 This file is used to list changes made in each version of the yum cookbook.
 
+v4.0.2
+------
+Remove references to bootstrapurl parameter in rackspace_apt_repository LWRP
+
 v4.0.0
 ------
 Rackspace Fork
