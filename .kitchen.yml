@@ -15,3 +15,7 @@ suites:
   attributes: {}
   includes:
   - centos-6.4
+- name: lwrps
+  run_list:
+  - recipe[rackspace_yum_test::lwrps]
+  attributes: {}

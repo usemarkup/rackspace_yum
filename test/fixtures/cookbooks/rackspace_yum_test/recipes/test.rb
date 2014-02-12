@@ -1,6 +1,6 @@
 #
-# Cookbook:: rackspace_yum
-# Recipe:: resource-tester
+# Cookbook:: rackspace_yum_test
+# Recipe:: test
 #
 # Author:: Sean OMeara <someara@getchef.com>
 # Author:: Matthew Thode <matt.thode@rackspace.com>
