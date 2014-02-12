@@ -23,7 +23,8 @@
 
 actions :create, :delete, :add, :remove
 
-state_attrs :description,
+state_attrs :bootstrapurl,
+            :description,
             :enabled,
             :exclude,
             :failovermethod,
