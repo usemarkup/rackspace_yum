@@ -28,16 +28,12 @@ state_attrs :description,
             :exclude,
             :failovermethod,
             :includepkgs,
-            :key,
-            :make_cache,
+            :gpgkey,
             :metadata_expire,
             :mirrorlist,
             :priority,
             :proxy,
             :proxy_username,
-            :repo_name,
-            :type,
-            :type,
             :url
 
 default_action :create
