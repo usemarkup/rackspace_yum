@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'rackspace_yum::default' do
   let(:chef_run) do
-    runner = ChefSpec::Runner.new(:step_into => ['repository'])
+    runner = ChefSpec::Runner.new(['step_into'] => ['repository'])
     runner.converge('rackspace_yum::default')
   end
 
